@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="media/images/logo.png" type="image/x-icon">
+    <title>SwasthyaDocs - Leveraging Technology to Transform Healthcare</title>
+</head>
+
+<style>
+
+@font-face {
+    font-family: 'sdfontmed';
+    src: url('Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'sdfontsem';
+    src: url('Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'sdfontbold';
+    src: url('Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'sdfontreg';
+    src: url('Montserrat-Regular.ttf');
+}
+
+body{
+    background: url(media/images/mainpage_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 85%;
+    margin: 30px 100px;
+}
+
+nav{
+    align-items: center;
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: sdfontbold;
+    font-size: 20px;
+    color: #2F618B;
+}
+
+.logo p{
+    padding: 0 20px;
+}
+.na-links{
+    display: flex;
+    font-family: sdfontmed;
+}
+
+.na-links a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #508DC0;
+    margin: 0px 25px;
+}
+
+.na-links a:hover{
+    color: #2F618B;
+}
+
+.main-container{
+    width: 100%;
+    height: 620px;
+    border: 1px solid #508DC0;
+    border-radius: 25px;
+    display: flex;
+}
+
+.hero-text{
+    height: 100%;
+    width: 50%;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+.head-btn{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 0.5px solid #508DC0;
+    height: 30px;
+    width: 180px ;
+    border-radius: 8px;
+    font-family: sdfontmed;
+    font-size: 14px;
+    color: #508DC0;
+}
+
+
+.heading{
+    font-family: sdfontmed;
+    color:#144065;
+    font-size: 45px;
+}
+
+.heading-para{
+    font-family: sdfontreg;
+    color: #AAAAAA;
+}
+
+.signup-btn{
+    background-color: #144065;
+    color: white;
+    font-family: sdfontbold;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-size: 10px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.login-btn{
+    border: 1px solid #144065;
+    background-color: transparent;
+    color: #144065;
+    font-family: sdfontbold;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.login-btn:hover{
+    background-color: #144065;
+    transition: 0.3s;
+    color: white;
+}
+
+.hero-image{
+    height: 100%;
+    width: 50%;
+}
+
+.hero-image img{
+    margin-top: 50px;
+}
+</style>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="media/images/logo.png" alt="logo" width="3%">
+            <p class="logo-name">SwasthyaDocs</p>
+        </div>
+
+        <div class="na-links">
+            <a href="#Home">Home</a>
+            <a href="#Services">Services</a>
+            <a href="#About">About</a>
+            <a href="#Contact">Contact</a>
+        </div>
+    </nav>
+</br>
+    <div class="main-container">
+        <div class="hero-text">
+            <div class="head-btn">
+                🚑 Health In your hand 
+            </div>
+        </br>
+            <div class="heading">
+                Revolutionize <span style="font-family:sdfontbold; color:#144065;">healthcare</span></br>with <span style="font-family:sdfontbold; color:#144065; ">SwasthyaDocs</span>
+            </div>
+            <p class="heading-para">Elevate patient care with SwasthyaDocs , your gateway to </br>streamlined and advanced healthcare management.</p>
+        </br>
+            <a href="signup.html"><button class="signup-btn">Sign up</button></a>
+            <a href="login.html"><button class="login-btn">Login</button></a>
+        </div>
+        <div class="hero-image">
+            <img src="media/images/Dr3D.png" alt="Doctor3D" width="95%">
+        </div>
+    </div>
+</body>
+</html>
