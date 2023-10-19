@@ -213,7 +213,7 @@
                     </div>
                     <div class="greet-text">Please enter your details.</div>
 
-                    <form id="signupForm" method="post" action="signup.html">
+                    <form id="signupForm" method="post" action="signup.php">
                         <input type="text" id="fullname" placeholder="Full Name">
                         <input type="tel" id="contact" placeholder="Contact">
                         <input type="email" id="email" placeholder="Email">
@@ -256,13 +256,10 @@
                 if (data.status === 'success') {
                     // Do something for successful signup
                 }
-        
             } catch (error) {
                 console.error('Error during signup:', error);
             }
-        }
-        
-         
+        }        
     </script>
 </body>
 </html>
