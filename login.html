@@ -233,34 +233,35 @@
 
     <script>
         async function login() {
-            const username = document.getElementById('email').value;
+            const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
-
+        
             try {
                 const response = await fetch('login.php', {
-                   method: 'POST',
-                   headers: {
-                      'Content-Type': 'application/x-www-form-urlencoded',
-                   },
-                   body: `email=${email}&password=${password}`,
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: `email=${email}&password=${password}`,
                 });
-             
+        
                 const data = await response.json();
                 console.log(data);
-             
+        
                 const errorMessageElement = document.getElementById('error-message');
-             
+        
                 if (data.status === 'success') {
-                   // Redirect to the dashboard page on successful login
-                   window.location.href = 'dashboard.html';
+                    // Redirect to the dashboard page on successful login
+                    window.location.href = 'dashboard.html';
                 } else {
-                   // Display error message
-                   errorMessageElement.innerText = data.message;
+                    // Display error message
+                    errorMessageElement.innerText = data.message;
                 }
-             } catch (error) {
+            } catch (error) {
                 console.error('Error during login:', error);
-             }
+            }
         }
+        
     </script>
 
 </body>
