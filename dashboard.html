@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="media/images/logo.png" type="image/x-icon">
+    <title>Welcome - SwasthyaDocs</title>
+</head>
+
+
+<style>
+
+@font-face {
+    font-family: 'sdfontmed';
+    src: url('Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'sdfontsem';
+    src: url('Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'sdfontbold';
+    src: url('Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'sdfontreg';
+    src: url('Montserrat-Regular.ttf');
+}
+    
+
+.main-container{
+    width: 100%;
+    display: flex;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: #144065;
+    height: 100vh;
+    width: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    padding-top: 20px;
+}
+    .logo-box{
+        background-color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nav-svg{
+        fill: white;
+        cursor: pointer;
+    }
+
+    .nav-icons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .nav-icons img{
+        margin: 30px 0px;
+    }
+
+    .logout{
+      padding-bottom: 20px;
+    }
+
+    .doctor-profile{
+        width: 90vw ;
+        height: 100vh;
+        padding: 0 40px;
+        
+    }
+
+    .stats{
+        background-color: rgb(84, 138, 185);
+        height: 100vh;
+        width: 60vw;
+    }
+
+    .logo-name p{
+        font-family: sdfontbold;
+        font-size: 25px;
+        color: #2F618B;
+        margin: 25px 0px;
+   }
+
+  .id-doc{
+    height: 200px;
+    width: 800px;
+    background-color: #508DC0;
+    border: none;
+    border-radius: 25px;
+    margin-top: 50px;
+    color: white;
+  }
+
+   .wel-doc h3{
+    font-family: sdfontbold;
+   }
+
+   .wel-doc p{
+    font-family: sdfontreg;
+    font-size: 10px;
+   }
+
+   .rec-presc{
+    width: 800px;
+    height: 420px;
+    background-color: transparent;
+    border-radius: 25px;
+    border: 0.5px solid #2F618B;
+    margin-top: 50px;
+   }
+
+   .rec-presc-heading{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    justify-content: space-between;
+   }
+
+   .search-box{
+    display: flex;
+    align-items: center;
+    background-color: #EDF4F9;
+    border-radius: 6px;
+    border: 0.5px solid #508DC0;
+    height: 40px;
+    width: 250px;
+   }
+
+   .search-box input{
+    border: none;
+    background-color: transparent;
+    padding-left: 20px;
+    outline: none;
+    color: #144065;
+    font-family: sdfontmed;
+   }
+
+   .search-box img{
+    padding-left: 35px;
+   }
+
+   .rec-presc-table{
+    width: 93%;
+    padding-left: 30px;
+   }
+
+   table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th{
+    border: none;
+    color: #3897CE;
+    padding: 20px 0px ;
+}
+
+th, td {
+    text-align: left;
+    padding: 20px;
+    text-align: center;
+    font-family: sdfontreg;
+    font-size: 14px;
+    border-radius: 20px;
+
+   
+}
+thead tr{
+    border: 0.5px solid #508DC0;
+}
+tbody tr{
+    border: 0.5px solid #508DC0;
+}
+
+
+</style>
+
+
+
+<body>
+    <div class="main-container">
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <div class="logo-box">
+                        <img src="media/images/logo.png" alt="logo" width="35px">
+                    </div>
+                </div>
+
+                <div class="nav-icons">
+                    <img id="nav-svg" src="media/images/dashboard.svg" alt="dashboard" width="30px">
+                    <img id="nav-svg" src="media/images/new.svg" alt="add-new" width="30px">
+                    <img id="nav-svg" src="media/images/files.svg" alt="dashboard" width="30px">
+                </div>
+
+                <div class="logout">
+                    <div class="logout-icon">
+                        <img id="nav-svg" src="media/images/logout.svg" alt="logout" width="30px">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="doctor-profile">
+            <div class="logo-name">
+                <p>SwasthyaDocs</p>
+            </div>
+
+            <div class="id-doc">
+                <div class="wel-doc">
+                    <h3 style="padding-left: 40px; padding-top: 80px; ">Hello Dr. Ashutosh</h3>
+                    <p style="padding-left: 40px;" >Here your important reports and task please
+                        <br>Check your appointment
+                    </p>
+                </div>
+            </div>
+            
+            <div class="rec-presc">
+                <div class="rec-presc-heading">
+                    <h3 style="font-family: sdfontbold; color:#144065; font-size: 22px;">Recent Prescriptions</h3>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search by ID">
+                        <img src="media/images/search.svg" alt="" width="30px">
+                    </div>
+                </div>
+
+                <div class="rec-presc-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th>ID</th>
+                                <th>Patient Name</th>
+                                <th>Gender</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#1</td>
+                                <td>A21B4</td>
+                                <td>Sanjay Kumar</td>
+                                <td>M</td>
+                                <td>20-09-23</td>
+                            </tr>
+                            <tr>
+                                <td>#2</td>
+                                <td>C65D1</td>
+                                <td>Meena Sharma</td>
+                                <td>F</td>
+                                <td>16-09-23</td>
+                            </tr>
+                            <tr>
+                                <td>#3</td>
+                                <td>Z67B4</td>
+                                <td>Govind Sharma</td>
+                                <td>M</td>
+                                <td>12-09-23</td>
+                            </tr>
+                            <tr>
+                                <td>#4</td>
+                                <td>X89J0</td>
+                                <td>Samridhi Uniyal</td>
+                                <td>F</td>
+                                <td>10-09-23</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats"></div>
+
+
+    </div>
+
+</body>
+</html>
